@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # These values are required for your SSL cert to work. Please add them!
-domain=mydomain.com
-email=ssl@mydomain.com
+domain=ipfs-ssl.w3bmint.xyz
+email=climacs@w3bmint.xyz
 
 
 echo "Creating folders for docker volumes!"
