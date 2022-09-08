@@ -11,7 +11,6 @@ services:
                         - "4001:4001"
                         - "127.0.0.1:8080:8080"
                         - "127.0.0.1:8081:8081"
-                        - "127.0.0.1:5001:5001"
                 restart: unless-stopped
         nginx:
                 image: nginx:1.17.2
@@ -19,6 +18,7 @@ services:
                         - "80:80"
                         - "443:443"
                         - "4003:4003"
+                        - "5001:5001"
                 volumes:
                         - ./data/nginx/conf.d:/etc/nginx/conf.d
                         - ./data/nginx/ssl:/etc/nginx/ssl
